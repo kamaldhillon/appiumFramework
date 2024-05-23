@@ -1,17 +1,18 @@
-import io.appium.java_client.AppiumBy;
+package test;
+
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import org.openqa.selenium.By;
-import org.openqa.selenium.DeviceRotation;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageobjects.android.FirstPage;
 
-public class FirstTest extends BaseTest{
+import static utils.ExtentTestManager.startTest;
+
+
+public class FirstTest extends BaseTest {
 
     @Test
     public void firstTest() {
-
+        startTest("param");
         FirstPage page = new FirstPage(driver);
         page.clickOnPreference();
         page.clickOnPreferenceDependenices();

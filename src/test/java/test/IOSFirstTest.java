@@ -1,10 +1,10 @@
-import io.appium.java_client.AppiumBy;
-import io.appium.java_client.android.nativekey.AndroidKey;
-import io.appium.java_client.android.nativekey.KeyEvent;
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
+package test;
 
-public class IOSFirstTest extends IOSBaseTest{
+import io.appium.java_client.AppiumBy;
+import org.testng.annotations.Test;
+import test.IOSBaseTest;
+
+public class IOSFirstTest extends IOSBaseTest {
 
     @Test
     public void firstTest() {
