@@ -1,3 +1,5 @@
+package test;
+
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
@@ -6,8 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import test.BaseTest;
 
-public class ScrollTest extends BaseTest{
+public class ScrollTest extends BaseTest {
 
     @Test
     public void scrollTest() throws InterruptedException {

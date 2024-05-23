@@ -7,7 +7,7 @@
 
     <test name="Test1">
         <classes>
-            <class name="FirstTest"/>
+            <class name="test.FirstTest"/>
         </classes>
     </test><!-- Test -->
 </suite><!-- Test -->
