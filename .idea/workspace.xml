@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0b7cda-dacf-40b3-bd5b-448e8f571238" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SecondTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageobjects/android/FirstPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DragTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IOSBaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/IOSFirstTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ScrollTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SecondTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SecondTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -43,7 +49,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/kamaljitkaur/AppiumFramework/src/test/java&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -51,7 +58,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SecondTest.secondTest">
+  <component name="RunManager" selected="TestNG./Users/kamaljitkaur/AppiumFramework/testng.xml">
     <configuration name="FirstTest" type="TestNG" nameIsGenerated="true">
       <module name="AppiumFramework" />
       <shortenClasspath name="NONE" />
@@ -110,10 +117,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondTest.firstTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="IOSFirstTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SecondTest" />
+      <option name="MAIN_CLASS_NAME" value="IOSFirstTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IOSFirstTest.firstTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumFramework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IOSFirstTest" />
       <option name="METHOD_NAME" value="firstTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -122,12 +140,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondTest.secondTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ScrollTest.swipe" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AppiumFramework" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SecondTest" />
-      <option name="METHOD_NAME" value="secondTest" />
+      <option name="MAIN_CLASS_NAME" value="ScrollTest" />
+      <option name="METHOD_NAME" value="swipe" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/kamaljitkaur/AppiumFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AppiumFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -164,15 +192,19 @@
     <list>
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.FirstTest" />
-      <item itemvalue="TestNG.SecondTest.firstTest" />
-      <item itemvalue="TestNG.SecondTest.secondTest" />
+      <item itemvalue="TestNG./Users/kamaljitkaur/AppiumFramework/testng.xml" />
+      <item itemvalue="TestNG.IOSFirstTest" />
+      <item itemvalue="TestNG.IOSFirstTest.firstTest" />
+      <item itemvalue="TestNG.ScrollTest.swipe" />
       <item itemvalue="TestNG.FirstTest.firstTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SecondTest.secondTest" />
+        <item itemvalue="TestNG./Users/kamaljitkaur/AppiumFramework/testng.xml" />
         <item itemvalue="TestNG.FirstTest.firstTest" />
-        <item itemvalue="TestNG.SecondTest.firstTest" />
+        <item itemvalue="TestNG.IOSFirstTest.firstTest" />
+        <item itemvalue="TestNG.IOSFirstTest" />
+        <item itemvalue="TestNG.ScrollTest.swipe" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +242,21 @@
           <url>file://$PROJECT_DIR$/src/test/java/SecondTest.java</url>
           <line>23</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ScrollTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/utils/Listeners.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/ExtentUtil.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

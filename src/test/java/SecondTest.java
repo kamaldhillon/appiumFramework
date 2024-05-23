@@ -12,7 +12,7 @@ public class SecondTest extends BaseTest{
     @Test
     public void secondTest() throws InterruptedException {
 
-        driver.findElement(AppiumBy.accessibilityId("Views")).click();
+         driver.findElement(AppiumBy.accessibilityId("Views")).click();
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='Expandable Lists']")).click();
         driver.findElement(AppiumBy.accessibilityId("1. Custom Adapter")).click();
         WebElement element= driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
