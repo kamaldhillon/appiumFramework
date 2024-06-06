@@ -12,7 +12,7 @@ public class FirstTest extends BaseTest {
 
     @Test
     public void firstTest() {
-        startTest("param");
+        startTest("First Page");
         FirstPage page = new FirstPage(driver);
         page.clickOnPreference();
         page.clickOnPreferenceDependenices();
